@@ -1,7 +1,7 @@
 //% weight=0 color=#228B22 icon="\uf1b9"
 namespace KSB037 {
     /**
-    * KSB037馬達控制
+    * 左右馬達同時正轉
     */
     //% blockId="foreward" block="小車前進|轉速(0~1023) %power"
     //% blockGap=1 weight=90
@@ -12,6 +12,9 @@ namespace KSB037 {
         pins.analogWritePin(AnalogPin.P1, power)
         pins.analogWritePin(AnalogPin.P2, power)
     }
+    /**
+    * 左右馬達同時反轉
+    */
     //% blockId="backward" block="小車後退|轉速(0~1023) %power"
     //% blockGap=1  weight=80
     //% power.min=0 power.max=1023
@@ -21,6 +24,9 @@ namespace KSB037 {
         pins.analogWritePin(AnalogPin.P1, power)
         pins.analogWritePin(AnalogPin.P2, power)
     }
+    /**
+    * 左馬達正轉，右馬達反轉
+    */
     //% blockId="rightward" block="小車右轉|轉速(0~1023) %power"
     //% blockGap=1  weight=70
     //% power.min=0 power.max=1023
@@ -30,6 +36,9 @@ namespace KSB037 {
         pins.analogWritePin(AnalogPin.P1, power)
         pins.analogWritePin(AnalogPin.P2, power)
     }
+    /**
+    * 左馬達反轉，右馬達正轉
+    */
     //% blockId="leftward" block="小車左轉|轉速(0~1023) %power"
     //% blockGap=20  weight=60
     //% power.min=0 power.max=1023
@@ -67,7 +76,10 @@ namespace KSB037 {
         pins.digitalWritePin(DigitalPin.P8, 0)
         pins.analogWritePin(AnalogPin.P1, power)
     }
-    //% blockId="stop" block="所有馬達停止"
+    /**
+    * 左右馬達同時停止轉動
+    */
+    //% blockId="stop" block="小車停車"
     //% blockGap=20 weight=75
     export function stop() {
         pins.analogWritePin(AnalogPin.P1, 0)
