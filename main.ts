@@ -1,9 +1,3 @@
-/*
-R
-modified from pxt-servo/servodriver.ts
-load dependency
-"KSB037": "file:../KSB037"
-*/
 //% weight=0 color=#228B22 icon="\uf1b9"
 namespace KSB037 {
     /**
