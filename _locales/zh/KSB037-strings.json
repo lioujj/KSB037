@@ -1,3 +1,4 @@
 {
 	"KSB037.foreward|block": "小車前進|轉速(0~1023) %power"
+	"KSB037.backward|block": "小車後退|轉速(0~1023) %power"
 }
