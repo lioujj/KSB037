@@ -55,7 +55,7 @@ namespace KSB037 {
         pins.digitalWritePin(DigitalPin.P12, 1)
         pins.analogWritePin(AnalogPin.P2, power)
     }
-    //% blockId="leftMotor_backward" block="left motor backward|speed(0~1023) %power"
+    //% blockId="leftMotor_backward" block="left motor reverse|speed(0~1023) %power"
     //% blockGap=1  weight=20
     //% power.min=0 power.max=1023
     export function leftMotor_backward(power: number) {
@@ -69,7 +69,7 @@ namespace KSB037 {
         pins.digitalWritePin(DigitalPin.P8, 1)
         pins.analogWritePin(AnalogPin.P1, power)
     }
-    //% blockId="rightMotor_backward" block="right motor backward|speed(0~1023) %power"
+    //% blockId="rightMotor_backward" block="right motor reverse|speed(0~1023) %power"
     //% blockGap=1 weight=40
     //% power.min=0 power.max=1023
     export function rightMotor_backward(power: number) {
