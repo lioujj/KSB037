@@ -3,7 +3,7 @@ namespace KSB037 {
     /**
     * 左右馬達同時正轉
     */
-    //% blockId="foreward" block="小車前進|轉速(0~1023) %power"
+    //% blockId="foreward" block="car foreward|speed(0~1023) %power"
     //% blockGap=1 weight=90
     //% power.min=0 power.max=1023
     export function foreward(power: number) {
