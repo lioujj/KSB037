@@ -1,4 +1,4 @@
-//% weight=0 color=#228B22 icon="\uf1b9"
+//% weight=0 color=#9ACD32 icon="\uf1b9"
 namespace KSB037 {
     /**
     * 左右馬達同時正轉
